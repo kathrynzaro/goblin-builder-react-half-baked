@@ -7,14 +7,14 @@ import { useState, useEffect } from 'react';
 function App() {
   const [allGoblins, setAllGoblins] = useState([]);
   const [visibleGoblins, setVisibleGoblins] = useState(allGoblins);
-  const [goblinFormName, setGoblinFormName] = useState('');
+  const [goblinFormName, setGoblinFormName] = useState('kat');
   const [goblinFormHP, setGoblinFormHP] = useState('0');
   const [goblinFormColor, setGoblinFormColor] = useState('pink');
   const [search, setSearch] = useState('');
   /* 
     track: 
       allGoblins, an array of all goblins
-      visibleGoblins, a second array of goblins: this one is the filtered version of the above allGoblins array
+      visibleGoblins, a second array of gobblins: this one is the filtered version of the above allGoblins array
       goblinFormName, which is how we track the user input for the current name of the goblin in the form
       goblinFormHP, which is how we track the user input for the current HP of the goblin in the form
       goblinFormColor, which is how we track the user input for the current color of the goblin in the form
